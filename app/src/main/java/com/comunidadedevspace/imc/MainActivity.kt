@@ -33,6 +33,7 @@ class MainActivity : AppCompatActivity() {
                 //Ir para a proxima tela
                 // Enviar para proxima tela os resultados
                 val intent = Intent(this, ResultActivity::class.java)
+                intent.putExtra(KEY_RESULT_IMC, imc)
                 startActivity(intent)
 
             } else {
