@@ -26,19 +26,19 @@ class ResultActivity : AppCompatActivity() {
             tvClass.text = "Obesidade grau III"
             tvClass.setTextColor(getColor(R.color.red))
             //Obesidade grau 3
-        } else if (result >= 35.0 && result <=39.9) {
+        } else if (result >= 35.0 && result <=39.99) {
             tvClass.text = "Obesidade grau II"
             tvClass.setTextColor(getColor(R.color.red))
             //Obesidade grau 2
-        } else if (result >= 30.0 && result <=34.9) {
+        } else if (result >= 30.0 && result <=34.99) {
             tvClass.text = "Obesidade grau I"
             tvClass.setTextColor(getColor(R.color.orange))
             //Obesidade grau 1
-        } else if (result >= 25.0 && result <=29.9) {
+        } else if (result >= 25.0 && result <=29.99) {
             tvClass.text = "Sobrepeso"
             tvClass.setTextColor(getColor(R.color.yellow))
             //Obesidade Sobrepeso
-        } else if (result >= 18.6 && result <=24.9) {
+        } else if (result >= 18.6 && result <=24.99) {
             tvClass.text = "Normal"
             tvClass.setTextColor(getColor(R.color.green))
             //Normal

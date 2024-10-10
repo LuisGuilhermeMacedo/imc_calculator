@@ -32,7 +32,7 @@
             android:layout_height="wrap_content"
             android:textColor="@color/white"
             android:layout_marginLeft="30dp"
-            android:textSize="20dp"
+            android:textSize="25dp"
             android:textStyle="bold"
 
             android:text="Calculadora IMC"
