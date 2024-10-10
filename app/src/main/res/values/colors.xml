@@ -9,6 +9,11 @@
     <color name="orange">#FFA500</color>
     <color name="green">#00FF00</color>
     <color name="blue">#0000FF</color>
+    <color name="primary">#7fffd4</color>
+    <color name="primary_dark">#61d5d5</color>
+    <color name="secondary">#6e71ff</color>
+
+
 
 
 </resources>
