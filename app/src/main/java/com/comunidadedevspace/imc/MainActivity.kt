@@ -1,5 +1,6 @@
 package com.comunidadedevspace.imc
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
@@ -29,7 +30,10 @@ class MainActivity : AppCompatActivity() {
                 val alturaFinal = altura * altura
                 val imc = peso / alturaFinal
 
-                println("seu imc: " + imc)
+                //Ir para a proxima tela
+                // Enviar para proxima tela os resultados
+                val intent = Intent(this, ResultActivity::class.java)
+                startActivity(intent)
 
             } else {
                 Snackbar.make(
