@@ -12,7 +12,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        // Receber oque esta dentro dos edit text
+
         val edtPeso = findViewById<TextInputEditText>(R.id.edt_peso)
         val edtAltura = findViewById<TextInputEditText>(R.id.edt_altura)
 
@@ -30,8 +30,7 @@ class MainActivity : AppCompatActivity() {
                 val alturaFinal = altura * altura
                 val imc = peso / alturaFinal
 
-                //Ir para a proxima tela
-                // Enviar para proxima tela os resultados
+
                 val intent = Intent(this, ResultActivity::class.java)
                 intent.putExtra(KEY_RESULT_IMC, imc)
                 startActivity(intent)

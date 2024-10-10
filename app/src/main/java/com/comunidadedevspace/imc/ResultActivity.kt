@@ -18,26 +18,26 @@ class ResultActivity : AppCompatActivity() {
 
         val tvResult = findViewById<TextView>(R.id.tv_result)
         val tvClass = findViewById<TextView>(R.id.tv_class)
-        val tvClassLabel = findViewById<TextView>(R.id.tv_class_label)
+
 
         tvResult.text = result.toString()
 
         if (result >= 40.0) {
             tvClass.text = "Obesidade grau III"
             tvClass.setTextColor(getColor(R.color.red))
-            //Obesidade grau 3
+
         } else if (result >= 35.0 && result <=39.99) {
             tvClass.text = "Obesidade grau II"
             tvClass.setTextColor(getColor(R.color.red))
-            //Obesidade grau 2
+
         } else if (result >= 30.0 && result <=34.99) {
             tvClass.text = "Obesidade grau I"
             tvClass.setTextColor(getColor(R.color.orange))
-            //Obesidade grau 1
+
         } else if (result >= 25.0 && result <=29.99) {
             tvClass.text = "Sobrepeso"
             tvClass.setTextColor(getColor(R.color.yellow))
-            //Obesidade Sobrepeso
+
         } else if (result >= 18.6 && result <=24.99) {
             tvClass.text = "Normal"
             tvClass.setTextColor(getColor(R.color.green))
@@ -45,7 +45,7 @@ class ResultActivity : AppCompatActivity() {
         } else if (result <= 18.5) {
             tvClass.text = "Abaixo do normal"
             tvClass.setTextColor(getColor(R.color.blue))
-            //Abaixo do Normal
+
         }
 
     }
